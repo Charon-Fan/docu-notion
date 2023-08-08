@@ -31,7 +31,7 @@ Currently, docu-notion expects that each page has only one of the following: sub
 
 ## 6. Pull your pages
 
-First, determine the id of your root page by clicking "Share" and looking at the the url it gives you. E.g.
+First, determine the id of your root page by clicking "Share" and looking at the url it gives you. E.g.
 https://www.notion.so/hattonjohn/My-Docs-0456aa5842946bdbea3a4f37c97a0e5
 means that the id is "0456aa5842946PRETEND4f37c97a0e5".
 
@@ -133,3 +133,16 @@ Options:
 # Plugins
 
 If your project needs some processing that docu-notion doesn't already provide, you can provide a plugin that does it. See the [plugin readme](src/plugins/README.md).
+
+# Callouts ➜ Admonitions
+
+To map Notion callouts to Docusaurus admonitions, ensure the icon is for the type you want.
+
+- ℹ️ ➜ note
+- 📝➜ note
+- 💡➜ tip
+- ❗➜ info
+- ⚠️➜ caution
+- 🔥➜ danger
+
+The default admonition type, if no matching icon is found, is "note".
